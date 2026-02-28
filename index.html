@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juju 💎 | Body Piercing & Jewelry Curation · Houston TX</title>
+  <meta name="description" content="Juju (Julia Claire) is a professional body piercing artist at Tattoo Temple Houston. Specializing in ear curation, nose piercings, body piercings, and jewelry upgrades. Walk-ins welcome Fri & Sat 12–6PM." />
+  <meta property="og:title" content="Juju 💎 | Body Piercing & Jewelry Curation" />
+  <meta property="og:description" content="Professional piercing artist in Houston, TX. Ear curation, nose piercings, body piercings & jewelry upgrades. Walk-ins welcome Fri & Sat 12–6PM." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://juju.brilliart" />
+  <meta property="og:image" content="https://juju.brilliart/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Juju 💎 | Body Piercing & Jewelry Curation" />
+  <meta name="twitter:description" content="Professional piercing artist in Houston, TX. Walk-ins Fri & Sat 12–6PM." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Juju Brilliart — Body Piercing",
+    "description": "Professional body piercing artist specializing in ear curation, nose piercings, body piercings, and jewelry upgrades.",
+    "url": "https://juju.brilliart",
+    "telephone": "",
+    "image": "https://juju.brilliart/og-image.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Tattoo Temple Houston",
+      "addressLocality": "Houston",
+      "addressRegion": "TX",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Friday", "Saturday"],
+        "opens": "12:00",
+        "closes": "18:00"
+      }
+    ],
+    "sameAs": ["https://www.instagram.com/juju.brilliart/"]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ── RESET & BASE ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --black:     #0e0e0e;
+      --charcoal:  #1a1a1a;
+      --dark:      #242424;
+      --rose-gold: #C9A07A;
+      --rose-light:#d9b896;
+      --rose-dark: #a87d55;
+      --white:     #f5f0eb;
+      --gray:      #888880;
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans:  'Jost', system-ui, sans-serif;
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--font-sans);
+      font-weight: 300;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
+    /* ── MAX WIDTH WRAPPER ── */
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+
+    /* ── WALK-IN BANNER ── */
+    .banner {
+      background: var(--rose-gold);
+      color: var(--black);
+      text-align: center;
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 10px 24px;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: linear-gradient(to bottom, rgba(14,14,14,0.95) 0%, rgba(14,14,14,0) 100%);
+      transition: background 0.3s;
+    }
+    nav.scrolled { background: rgba(14,14,14,0.97); backdrop-filter: blur(8px); }
+    .nav-logo {
+      font-family: var(--font-serif);
+      font-size: 22px;
+      font-weight: 300;
+      letter-spacing: 0.06em;
+      color: var(--rose-gold);
+    }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a {
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--white);
+      opacity: 0.75;
+      transition: opacity 0.2s, color 0.2s;
+    }
+    .nav-links a:hover { opacity: 1; color: var(--rose-gold); }
+    .nav-book {
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      border: 1px solid var(--rose-gold);
+      color: var(--rose-gold);
+      padding: 8px 20px;
+      border-radius: 2px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .nav-book:hover { background: var(--rose-gold); color: var(--black); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+    .hamburger span { display: block; width: 24px; height: 1px; background: var(--white); transition: all 0.3s; }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      padding: 120px 24px 80px;
+      background: radial-gradient(ellipse at 60% 40%, #2a1f14 0%, var(--black) 65%);
+    }
+    .hero-bg-orb {
+      position: absolute;
+      width: 600px; height: 600px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(201,160,122,0.12) 0%, transparent 70%);
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+    .hero-eyebrow {
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--rose-gold);
+      margin-bottom: 24px;
+    }
+    .hero-name {
+      font-family: var(--font-serif);
+      font-size: clamp(64px, 12vw, 120px);
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: 0.04em;
+      margin-bottom: 8px;
+    }
+    .hero-gem { color: var(--rose-gold); }
+    .hero-tagline {
+      font-family: var(--font-serif);
+      font-size: clamp(16px, 3vw, 22px);
+      font-weight: 300;
+      font-style: italic;
+      color: rgba(245,240,235,0.65);
+      letter-spacing: 0.06em;
+      margin-bottom: 40px;
+    }
+    .hero-divider {
+      width: 60px; height: 1px;
+      background: var(--rose-gold);
+      margin: 0 auto 40px;
+    }
+    .hero-location {
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-bottom: 48px;
+    }
+    .hero-cta {
+      display: inline-block;
+      background: var(--rose-gold);
+      color: var(--black);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 16px 40px;
+      border-radius: 2px;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .hero-cta:hover { background: var(--rose-light); transform: translateY(-2px); }
+    .hero-scroll {
+      position: absolute;
+      bottom: 36px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gray);
+      animation: float 2.5s ease-in-out infinite;
+    }
+    .hero-scroll::after {
+      content: '';
+      display: block;
+      width: 1px; height: 40px;
+      background: linear-gradient(to bottom, var(--gray), transparent);
+    }
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(6px)} }
+
+    /* ── SECTION COMMON ── */
+    section { padding: 100px 0; }
+    .section-eyebrow {
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--rose-gold);
+      margin-bottom: 16px;
+    }
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: clamp(36px, 6vw, 56px);
+      font-weight: 300;
+      line-height: 1.15;
+      margin-bottom: 24px;
+    }
+    .section-divider {
+      width: 40px; height: 1px;
+      background: var(--rose-gold);
+      margin-bottom: 32px;
+    }
+
+    /* ── SERVICES ── */
+    #services { background: var(--charcoal); }
+    .services-header { text-align: center; margin-bottom: 60px; }
+    .services-header .section-divider { margin: 0 auto 0; }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 2px;
+    }
+    .service-card {
+      background: var(--dark);
+      padding: 48px 32px;
+      text-align: center;
+      transition: background 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--rose-gold);
+      transform: scaleX(0);
+      transition: transform 0.3s;
+    }
+    .service-card:hover { background: #2c2c2c; }
+    .service-card:hover::before { transform: scaleX(1); }
+    .service-icon {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .service-name {
+      font-family: var(--font-serif);
+      font-size: 22px;
+      font-weight: 400;
+      margin-bottom: 12px;
+      color: var(--white);
+    }
+    .service-desc {
+      font-size: 13px;
+      color: var(--gray);
+      line-height: 1.6;
+    }
+
+    /* ── GALLERY ── */
+    #gallery { background: var(--black); }
+    .gallery-header { text-align: center; margin-bottom: 60px; }
+    .gallery-header .section-divider { margin: 0 auto 0; }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4px;
+    }
+    .gallery-item {
+      aspect-ratio: 1;
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+      background: var(--dark);
+    }
+    .gallery-item .placeholder {
+      width: 100%; height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #1a1a1a 0%, #2a2318 50%, #1a1a1a 100%);
+      color: var(--gray);
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      gap: 12px;
+      transition: background 0.3s;
+    }
+    .gallery-item:hover .placeholder { background: linear-gradient(135deg, #222 0%, #302820 50%, #222 100%); }
+    .gallery-item .placeholder-icon { font-size: 32px; opacity: 0.4; }
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(201,160,122,0.15);
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.3s;
+      font-size: 24px;
+    }
+    .gallery-item:hover .gallery-overlay { opacity: 1; }
+    .gallery-cta { text-align: center; margin-top: 40px; }
+    .btn-outline {
+      display: inline-block;
+      border: 1px solid var(--rose-gold);
+      color: var(--rose-gold);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 14px 36px;
+      border-radius: 2px;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-outline:hover { background: var(--rose-gold); color: var(--black); }
+
+    /* ── LIGHTBOX ── */
+    .lightbox {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 1000;
+      background: rgba(10,10,10,0.96);
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .lightbox.active { display: flex; }
+    .lightbox-content {
+      max-width: 600px;
+      max-height: 80vh;
+      position: relative;
+      text-align: center;
+    }
+    .lightbox-content img { border-radius: 2px; max-height: 70vh; width: auto; }
+    .lightbox-placeholder {
+      width: 480px;
+      height: 480px;
+      background: var(--dark);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--gray);
+      gap: 12px;
+      border-radius: 2px;
+    }
+    .lightbox-close {
+      position: absolute;
+      top: -40px; right: 0;
+      font-size: 28px;
+      cursor: pointer;
+      color: var(--white);
+      opacity: 0.6;
+      transition: opacity 0.2s;
+    }
+    .lightbox-close:hover { opacity: 1; }
+
+    /* ── ABOUT ── */
+    #about { background: var(--charcoal); }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .about-image-wrap {
+      aspect-ratio: 3/4;
+      background: linear-gradient(135deg, #1a1a1a, #2a2318, #1a1a1a);
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gray);
+      font-size: 13px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .about-image-wrap span:first-child { font-size: 40px; opacity: 0.3; }
+    .about-content .section-divider { margin-bottom: 28px; }
+    .about-text {
+      font-size: 15px;
+      color: rgba(245,240,235,0.75);
+      line-height: 1.85;
+      margin-bottom: 20px;
+    }
+    .about-stats {
+      display: flex;
+      gap: 40px;
+      margin-top: 40px;
+      padding-top: 40px;
+      border-top: 1px solid rgba(201,160,122,0.2);
+    }
+    .stat-num {
+      font-family: var(--font-serif);
+      font-size: 40px;
+      font-weight: 300;
+      color: var(--rose-gold);
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-top: 6px;
+    }
+    .about-ig {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 36px;
+      font-size: 13px;
+      letter-spacing: 0.1em;
+      color: var(--rose-gold);
+      border-bottom: 1px solid rgba(201,160,122,0.3);
+      padding-bottom: 4px;
+      transition: border-color 0.2s;
+    }
+    .about-ig:hover { border-color: var(--rose-gold); }
+
+    /* ── BOOK NOW ── */
+    #book {
+      background: var(--black);
+      text-align: center;
+    }
+    .book-inner {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    .book-inner .section-divider { margin: 0 auto 32px; }
+    .book-text {
+      font-size: 16px;
+      color: rgba(245,240,235,0.65);
+      margin-bottom: 48px;
+      line-height: 1.85;
+    }
+    .book-cta {
+      display: inline-block;
+      background: var(--rose-gold);
+      color: var(--black);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 18px 48px;
+      border-radius: 2px;
+      transition: background 0.2s, transform 0.2s;
+      margin-bottom: 20px;
+    }
+    .book-cta:hover { background: var(--rose-light); transform: translateY(-2px); }
+    .book-note {
+      font-size: 12px;
+      color: var(--gray);
+      letter-spacing: 0.08em;
+    }
+
+    /* ── CONTACT ── */
+    #contact { background: var(--charcoal); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+    }
+    .contact-item {
+      margin-bottom: 36px;
+    }
+    .contact-label {
+      font-size: 10px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--rose-gold);
+      margin-bottom: 8px;
+    }
+    .contact-value {
+      font-family: var(--font-serif);
+      font-size: 22px;
+      font-weight: 300;
+      color: var(--white);
+    }
+    .contact-value a { transition: color 0.2s; }
+    .contact-value a:hover { color: var(--rose-gold); }
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      font-size: 14px;
+    }
+    .hours-row:last-child { border-bottom: none; }
+    .hours-day { color: var(--gray); }
+    .hours-time { color: var(--white); }
+    .hours-time.open { color: var(--rose-gold); }
+    .contact-map-placeholder {
+      aspect-ratio: 4/3;
+      background: var(--dark);
+      border-radius: 2px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      color: var(--gray);
+      font-size: 13px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--black);
+      padding: 40px 24px;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+    .footer-logo {
+      font-family: var(--font-serif);
+      font-size: 28px;
+      color: var(--rose-gold);
+      margin-bottom: 16px;
+    }
+    .footer-tagline {
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-bottom: 24px;
+    }
+    .footer-socials { display: flex; justify-content: center; gap: 24px; margin-bottom: 32px; }
+    .footer-socials a {
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gray);
+      transition: color 0.2s;
+    }
+    .footer-socials a:hover { color: var(--rose-gold); }
+    .footer-copy {
+      font-size: 12px;
+      color: rgba(136,136,128,0.5);
+    }
+
+    /* ── FLOAT BOOK BTN ── */
+    .float-book {
+      position: fixed;
+      bottom: 28px; right: 28px;
+      z-index: 200;
+      background: var(--rose-gold);
+      color: var(--black);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 14px 24px;
+      border-radius: 2px;
+      box-shadow: 0 8px 32px rgba(201,160,122,0.35);
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+    .float-book:hover {
+      background: var(--rose-light);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(201,160,122,0.45);
+    }
+
+    /* ── MOBILE NAV OVERLAY ── */
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 99;
+      background: rgba(14,14,14,0.98);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a {
+      font-family: var(--font-serif);
+      font-size: 32px;
+      font-weight: 300;
+      color: var(--white);
+      letter-spacing: 0.06em;
+      transition: color 0.2s;
+    }
+    .mobile-nav a:hover { color: var(--rose-gold); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .nav-links, .nav-book { display: none; }
+      .hamburger { display: flex; }
+      .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .about-stats { gap: 24px; }
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+      .lightbox-placeholder { width: 300px; height: 300px; }
+    }
+    @media (max-width: 480px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+      .services-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── FADE IN ANIMATION ── */
+    .fade-in { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+  <!-- Walk-in Banner -->
+  <div class="banner">✦ Walk-ins Welcome · Fri &amp; Sat 12–6PM · Tattoo Temple Houston ✦</div>
+
+  <!-- Nav -->
+  <nav id="mainNav">
+    <a href="#hero" class="nav-logo">Juju 💎</a>
+    <ul class="nav-links">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="https://ig.me/m/juju.brilliart" target="_blank" rel="noopener" class="nav-book">Book Now</a>
+    <div class="hamburger" id="hamburger" aria-label="Menu" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#gallery" class="mobile-link">Gallery</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+    <a href="https://ig.me/m/juju.brilliart" target="_blank" rel="noopener" style="color:var(--rose-gold)">Book Now</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-orb"></div>
+    <p class="hero-eyebrow">Houston, Texas · Tattoo Temple</p>
+    <h1 class="hero-name">Juju <span class="hero-gem">💎</span></h1>
+    <p class="hero-tagline">Body Piercing &amp; Jewelry Curation</p>
+    <div class="hero-divider"></div>
+    <p class="hero-location">@juju.brilliart · @tattootemple_houston</p>
+    <a href="https://ig.me/m/juju.brilliart" target="_blank" rel="noopener" class="hero-cta">Book Your Piercing</a>
+    <div class="hero-scroll">Scroll</div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <div class="services-header">
+        <p class="section-eyebrow">What I Offer</p>
+        <h2 class="section-title">Services</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="services-grid">
+        <div class="service-card fade-in">
+          <div class="service-icon">🌸</div>
+          <h3 class="service-name">Ear Curation</h3>
+          <p class="service-desc">Custom ear styling with thoughtfully placed piercings and curated jewelry for a unique, elevated look.</p>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">✨</div>
+          <h3 class="service-name">Nose Piercings</h3>
+          <p class="service-desc">Nostril, septum, and bridge piercings performed with precision and topped with the finest jewelry.</p>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">💫</div>
+          <h3 class="service-name">Body Piercings</h3>
+          <p class="service-desc">Surface, navel, dermal, and more — professional placement in a clean, welcoming environment.</p>
+        </div>
+        <div class="service-card fade-in">
+          <div class="service-icon">💎</div>
+          <h3 class="service-name">Jewelry Upgrades</h3>
+          <p class="service-desc">Swap out old jewelry for beautiful, high-quality pieces that complement your style and heal properly.</p>
+        </div>
+        <div class="service-card fade-in" style="grid-column: span 1;">
+          <div class="service-icon">🚶‍♀️</div>
+          <h3 class="service-name">Walk-in Piercings</h3>
+          <p class="service-desc">No appointment needed on Fridays &amp; Saturdays 12–6PM. Come in and leave sparkling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="wrap">
+      <div class="gallery-header">
+        <p class="section-eyebrow">Portfolio</p>
+        <h2 class="section-title">Gallery</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item fade-in" data-index="0">
+          <div class="placeholder">
+            <span class="placeholder-icon">💎</span>
+            <span>Ear Curation</span>
+          </div>
+          <div class="gallery-overlay">🔍</div>
+        </div>
+        <div class="gallery-item fade-in" data-index="1">
+          <div class="placeholder">
+            <span class="placeholder-icon">✨</span>
+            <span>Nose Ring</span>
+          </div>
+          <div class="gallery-overlay">🔍</div>
+        </div>
+        <div class="gallery-item fade-in" data-index="2">
+          <div class="placeholder">
+            <span class="placeholder-icon">🌸</span>
+            <span>Helix Stack</span>
+          </div>
+          <div class="gallery-overlay">🔍</div>
+        </div>
+        <div class="gallery-item fade-in" data-index="3">
+          <div class="placeholder">
+            <span class="placeholder-icon">💫</span>
+            <span>Daith Piercing</span>
+          </div>
+          <div class="gallery-overlay">🔍</div>
+        </div>
+        <div class="gallery-item fade-in" data-index="4">
+          <div class="placeholder">
+            <span class="placeholder-icon">💎</span>
+            <span>Jewelry Upgrade</span>
+          </div>
+          <div class="gallery-overlay">🔍</div>
+        </div>
+        <div class="gallery-item fade-in" data-index="5">
+          <div class="placeholder">
+            <span class="placeholder-icon">✨</span>
+            <span>Constellation</span>
+          </div>
+          <div class="gallery-overlay">🔍</div>
+        </div>
+      </div>
+      <div class="gallery-cta fade-in">
+        <a href="https://www.instagram.com/juju.brilliart/" target="_blank" rel="noopener" class="btn-outline">View Full Portfolio on Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+      <span class="lightbox-close" id="lightboxClose">✕</span>
+      <div class="lightbox-placeholder">
+        <span style="font-size:48px;opacity:0.3">💎</span>
+        <span style="font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray)">Gallery Image</span>
+        <a href="https://www.instagram.com/juju.brilliart/" target="_blank" rel="noopener" class="btn-outline" style="margin-top:16px;font-size:11px">View on Instagram</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-image-wrap fade-in">
+          <span>📸</span>
+          <span style="font-size:13px;letter-spacing:0.1em;text-transform:uppercase">Artist Photo</span>
+        </div>
+        <div class="about-content fade-in">
+          <p class="section-eyebrow">Meet the Artist</p>
+          <h2 class="section-title">Julia Claire</h2>
+          <div class="section-divider"></div>
+          <p class="about-text">
+            Hi, I'm Juju — a body piercing artist based in Houston, TX, working out of the beautiful Tattoo Temple Houston. My approach to piercing is simple: precision, safety, and beauty.
+          </p>
+          <p class="about-text">
+            I believe piercings are wearable jewelry — art you carry on your body. Every placement is intentional, every piece of jewelry carefully chosen to complement your unique anatomy and style.
+          </p>
+          <p class="about-text">
+            Whether you're building an ear curation or getting your first piercing, I'm here to guide you through the process with care and expertise.
+          </p>
+          <div class="about-stats">
+            <div>
+              <div class="stat-num">1.2K+</div>
+              <div class="stat-label">IG Followers</div>
+            </div>
+            <div>
+              <div class="stat-num">5</div>
+              <div class="stat-label">Services</div>
+            </div>
+            <div>
+              <div class="stat-num">HTX</div>
+              <div class="stat-label">Based In</div>
+            </div>
+          </div>
+          <a href="https://www.instagram.com/juju.brilliart/" target="_blank" rel="noopener" class="about-ig">
+            📷 @juju.brilliart
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOK NOW -->
+  <section id="book">
+    <div class="wrap">
+      <div class="book-inner">
+        <p class="section-eyebrow">Ready to Shine?</p>
+        <h2 class="section-title">Book Your Appointment</h2>
+        <div class="section-divider"></div>
+        <p class="book-text">
+          All bookings are handled through Instagram DMs. Send me a message with your piercing idea, preferred date, and any questions — I'll get back to you to confirm your appointment.
+        </p>
+        <a href="https://ig.me/m/juju.brilliart" target="_blank" rel="noopener" class="book-cta">DM to Book on Instagram</a>
+        <p class="book-note">Walk-ins also welcome · Fri &amp; Sat 12–6PM · No appointment needed</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div class="fade-in">
+          <p class="section-eyebrow">Find Me</p>
+          <h2 class="section-title">Contact</h2>
+          <div class="section-divider"></div>
+
+          <div class="contact-item">
+            <div class="contact-label">Location</div>
+            <div class="contact-value">
+              <a href="https://www.google.com/maps/search/Tattoo+Temple+Houston" target="_blank" rel="noopener">
+                Tattoo Temple Houston<br />Houston, TX
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-label">Booking</div>
+            <div class="contact-value">
+              <a href="https://ig.me/m/juju.brilliart" target="_blank" rel="noopener">DM on Instagram</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-label">Instagram</div>
+            <div class="contact-value">
+              <a href="https://www.instagram.com/juju.brilliart/" target="_blank" rel="noopener">@juju.brilliart</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-label">Hours</div>
+            <div class="hours-row">
+              <span class="hours-day">Monday – Thursday</span>
+              <span class="hours-time">By Appointment</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Friday</span>
+              <span class="hours-time open">12:00 – 6:00 PM ✦</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Saturday</span>
+              <span class="hours-time open">12:00 – 6:00 PM ✦</span>
+            </div>
+            <div class="hours-row">
+              <span class="hours-day">Sunday</span>
+              <span class="hours-time">Closed</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="fade-in">
+          <div class="contact-map-placeholder">
+            <span style="font-size:40px;opacity:0.3">📍</span>
+            <span>Tattoo Temple Houston</span>
+            <a href="https://www.google.com/maps/search/Tattoo+Temple+Houston" target="_blank" rel="noopener" class="btn-outline" style="margin-top:8px;font-size:11px">View on Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Juju 💎</div>
+    <p class="footer-tagline">Body Piercing &amp; Jewelry Curation · Houston, TX</p>
+    <div class="footer-socials">
+      <a href="https://www.instagram.com/juju.brilliart/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://ig.me/m/juju.brilliart" target="_blank" rel="noopener">Book Now</a>
+    </div>
+    <p class="footer-copy">
+      © 2025 Juju Brilliart · All rights reserved &nbsp;·&nbsp;
+      <a href="https://bayouwebstudio.com" target="_blank" style="color: inherit; text-decoration: none; opacity: 0.5; font-size: 12px;">Powered by BWS</a>
+    </p>
+  </footer>
+
+  <!-- FLOATING BOOK BUTTON -->
+  <a href="https://ig.me/m/juju.brilliart" target="_blank" rel="noopener" class="float-book">💎 Book Now</a>
+
+  <script>
+    // Nav scroll effect
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => mobileNav.classList.toggle('open'));
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => mobileNav.classList.remove('open'));
+    });
+
+    // Lightbox
+    const lightbox = document.getElementById('lightbox');
+    const lightboxClose = document.getElementById('lightboxClose');
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      item.addEventListener('click', () => lightbox.classList.add('active'));
+    });
+    lightboxClose.addEventListener('click', () => lightbox.classList.remove('active'));
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) lightbox.classList.remove('active');
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') lightbox.classList.remove('active');
+    });
+
+    // Fade in on scroll
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    fadeEls.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
