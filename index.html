@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Juju 💎 | Body Piercing & Jewelry Curation · Houston TX</title>
-  <meta name="description" content="Juju (Julia Claire) is a professional body piercing artist at Tattoo Temple Houston. Specializing in ear curation, nose piercings, body piercings, and jewelry upgrades. Walk-ins welcome Fri & Sat 12–6PM." />
+  <title>Julia Claire | Body Piercer | jujubrilliart.com</title>
+  <meta name="description" content="Julia Claire (Juju) is a professional body piercer at Tattoo Temple Houston. Specializing in ear curation, nose piercings, body piercings, and jewelry upgrades. Walk-ins welcome Fri & Sat 12–6PM." />
   <meta property="og:title" content="Juju 💎 | Body Piercing & Jewelry Curation" />
   <meta property="og:description" content="Professional piercing artist in Houston, TX. Ear curation, nose piercings, body piercings & jewelry upgrades. Walk-ins welcome Fri & Sat 12–6PM." />
   <meta property="og:type" content="website" />
@@ -309,6 +309,8 @@
       position: relative;
       background: var(--dark);
     }
+    .gallery-item img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+    .gallery-item:hover img { transform: scale(1.05); }
     .gallery-item .placeholder {
       width: 100%; height: 100%;
       display: flex;
@@ -733,46 +735,52 @@
         <div class="section-divider"></div>
       </div>
       <div class="gallery-grid">
-        <div class="gallery-item fade-in" data-index="0">
-          <div class="placeholder">
-            <span class="placeholder-icon">💎</span>
-            <span>Ear Curation</span>
-          </div>
+        <div class="gallery-item fade-in" data-index="0" data-src="img/photo_01.jpg">
+          <img src="img/photo_01.jpg" alt="Body piercing by Julia Claire" loading="lazy" />
           <div class="gallery-overlay">🔍</div>
         </div>
-        <div class="gallery-item fade-in" data-index="1">
-          <div class="placeholder">
-            <span class="placeholder-icon">✨</span>
-            <span>Nose Ring</span>
-          </div>
+        <div class="gallery-item fade-in" data-index="1" data-src="img/photo_02.jpg">
+          <img src="img/photo_02.jpg" alt="Ear curation by Juju" loading="lazy" />
           <div class="gallery-overlay">🔍</div>
         </div>
-        <div class="gallery-item fade-in" data-index="2">
-          <div class="placeholder">
-            <span class="placeholder-icon">🌸</span>
-            <span>Helix Stack</span>
-          </div>
+        <div class="gallery-item fade-in" data-index="2" data-src="img/photo_03.jpg">
+          <img src="img/photo_03.jpg" alt="Nose piercing by Julia Claire" loading="lazy" />
           <div class="gallery-overlay">🔍</div>
         </div>
-        <div class="gallery-item fade-in" data-index="3">
-          <div class="placeholder">
-            <span class="placeholder-icon">💫</span>
-            <span>Daith Piercing</span>
-          </div>
+        <div class="gallery-item fade-in" data-index="3" data-src="img/photo_04.jpg">
+          <img src="img/photo_04.jpg" alt="Body jewelry curation by Juju" loading="lazy" />
           <div class="gallery-overlay">🔍</div>
         </div>
-        <div class="gallery-item fade-in" data-index="4">
-          <div class="placeholder">
-            <span class="placeholder-icon">💎</span>
-            <span>Jewelry Upgrade</span>
-          </div>
+        <div class="gallery-item fade-in" data-index="4" data-src="img/photo_05.jpg">
+          <img src="img/photo_05.jpg" alt="Helix piercing by Julia Claire" loading="lazy" />
           <div class="gallery-overlay">🔍</div>
         </div>
-        <div class="gallery-item fade-in" data-index="5">
-          <div class="placeholder">
-            <span class="placeholder-icon">✨</span>
-            <span>Constellation</span>
-          </div>
+        <div class="gallery-item fade-in" data-index="5" data-src="img/photo_06.jpg">
+          <img src="img/photo_06.jpg" alt="Ear piercing stack by Juju" loading="lazy" />
+          <div class="gallery-overlay">🔍</div>
+        </div>
+        <div class="gallery-item fade-in" data-index="6" data-src="img/photo_07.jpg">
+          <img src="img/photo_07.jpg" alt="Daith piercing by Julia Claire" loading="lazy" />
+          <div class="gallery-overlay">🔍</div>
+        </div>
+        <div class="gallery-item fade-in" data-index="7" data-src="img/photo_08.jpg">
+          <img src="img/photo_08.jpg" alt="Body piercing jewelry upgrade by Juju" loading="lazy" />
+          <div class="gallery-overlay">🔍</div>
+        </div>
+        <div class="gallery-item fade-in" data-index="8" data-src="img/photo_09.jpg">
+          <img src="img/photo_09.jpg" alt="Constellation piercing by Julia Claire" loading="lazy" />
+          <div class="gallery-overlay">🔍</div>
+        </div>
+        <div class="gallery-item fade-in" data-index="9" data-src="img/photo_10.jpg">
+          <img src="img/photo_10.jpg" alt="Ear curation by Juju brilliart" loading="lazy" />
+          <div class="gallery-overlay">🔍</div>
+        </div>
+        <div class="gallery-item fade-in" data-index="10" data-src="img/photo_11.jpg">
+          <img src="img/photo_11.jpg" alt="Body piercing Houston TX by Julia Claire" loading="lazy" />
+          <div class="gallery-overlay">🔍</div>
+        </div>
+        <div class="gallery-item fade-in" data-index="11" data-src="img/photo_12.jpg">
+          <img src="img/photo_12.jpg" alt="Fine body jewelry piercing by Juju" loading="lazy" />
           <div class="gallery-overlay">🔍</div>
         </div>
       </div>
@@ -786,11 +794,7 @@
   <div class="lightbox" id="lightbox">
     <div class="lightbox-content">
       <span class="lightbox-close" id="lightboxClose">✕</span>
-      <div class="lightbox-placeholder">
-        <span style="font-size:48px;opacity:0.3">💎</span>
-        <span style="font-size:13px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gray)">Gallery Image</span>
-        <a href="https://www.instagram.com/juju.brilliart/" target="_blank" rel="noopener" class="btn-outline" style="margin-top:16px;font-size:11px">View on Instagram</a>
-      </div>
+      <img id="lightboxImg" src="" alt="Piercing by Julia Claire" style="max-height:80vh;max-width:90vw;border-radius:2px;display:block;" />
     </div>
   </div>
 
@@ -799,8 +803,7 @@
     <div class="wrap">
       <div class="about-grid">
         <div class="about-image-wrap fade-in">
-          <span>📸</span>
-          <span style="font-size:13px;letter-spacing:0.1em;text-transform:uppercase">Artist Photo</span>
+          <img src="img/profile.jpg" alt="Julia Claire - Body Piercer Houston TX" style="width:100%;height:100%;object-fit:cover;border-radius:2px;" />
         </div>
         <div class="about-content fade-in">
           <p class="section-eyebrow">Meet the Artist</p>
@@ -952,8 +955,13 @@
     // Lightbox
     const lightbox = document.getElementById('lightbox');
     const lightboxClose = document.getElementById('lightboxClose');
+    const lightboxImg = document.getElementById('lightboxImg');
     document.querySelectorAll('.gallery-item').forEach(item => {
-      item.addEventListener('click', () => lightbox.classList.add('active'));
+      item.addEventListener('click', () => {
+        const src = item.dataset.src || item.querySelector('img')?.src;
+        if (src && lightboxImg) lightboxImg.src = src;
+        lightbox.classList.add('active');
+      });
     });
     lightboxClose.addEventListener('click', () => lightbox.classList.remove('active'));
     lightbox.addEventListener('click', (e) => {
@@ -977,3 +985,4 @@
   </script>
 </body>
 </html>
+
