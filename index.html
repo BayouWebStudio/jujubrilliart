@@ -53,7 +53,7 @@
     .svc-card p{color:var(--muted);font-size:.82rem;line-height:1.5}
     .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
     .g-item{break-inside:avoid;margin-bottom:12px;overflow:hidden;cursor:pointer;position:relative}
-    .g-item img{width:100%;display:block;transition:transform .4s ease}
+    .g-item img{width:100%;display:block;aspect-ratio:1;object-fit:cover;transition:transform .4s ease}
     .g-item:hover img{transform:scale(1.04)}
     .g-item::after{content:'';position:absolute;inset:0;background:rgba(212,160,192,0);transition:background .3s;pointer-events:none}
     .g-item:hover::after{background:rgba(212,160,192,.12)}
