@@ -51,7 +51,7 @@
     .svc-icon{font-size:2.5rem;margin-bottom:1rem}
     .svc-card h3{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:400;margin-bottom:.6rem;color:var(--text)}
     .svc-card p{color:var(--muted);font-size:.82rem;line-height:1.5}
-    .gallery-grid{columns:3;column-gap:12px}
+    .gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
     .g-item{break-inside:avoid;margin-bottom:12px;overflow:hidden;cursor:pointer;position:relative}
     .g-item img{width:100%;display:block;transition:transform .4s ease}
     .g-item:hover img{transform:scale(1.04)}
@@ -90,8 +90,8 @@
     .lb-nav{position:absolute;top:50%;transform:translateY(-50%);font-size:2rem;cursor:pointer;padding:1rem;background:none;border:none;color:#999;transition:color .2s}
     .lb-nav:hover{color:var(--text)}
     .lb-prev{left:1rem}.lb-next{right:1rem}
-    @media(max-width:768px){nav{padding:1rem 1.5rem}.nav-links a{display:none}.hero-content{grid-template-columns:1fr;gap:3rem;text-align:center}.hero-image{order:-1}.hero-image img,.hero-placeholder{width:220px;height:220px}.services-grid{grid-template-columns:1fr 1fr}.gallery-grid{columns:2}.contact-grid{grid-template-columns:1fr}}
-    @media(max-width:480px){.gallery-grid{columns:1}.services-grid{grid-template-columns:1fr}}
+    @media(min-width:900px){.gallery-grid{grid-template-columns:repeat(3,1fr)}} @media(max-width:768px){nav{padding:1rem 1.5rem}.nav-links a{display:none}.hero-content{grid-template-columns:1fr;gap:3rem;text-align:center}.hero-image{order:-1}.hero-image img,.hero-placeholder{width:220px;height:220px}.services-grid{grid-template-columns:1fr 1fr}.gallery-grid{grid-template-columns:repeat(2,1fr)}.contact-grid{grid-template-columns:1fr}}
+    @media(max-width:480px){.gallery-grid{grid-template-columns:1fr}.services-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
